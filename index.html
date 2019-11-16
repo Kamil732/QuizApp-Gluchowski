@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz App</title>
+
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <div id="choose-category-container">
+        <h2>Wybierz kategorię: </h2>
+        <button id="categoryMath" class="btn-category">MATEMATYKA</button>
+        <button id="categoryEnglish" class="btn-category">ANGIELSKI</button>
+    </div>
+    <div id="container" class="hide">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="time-to-answer">
+                <div id="time-to-answer-in"></div>
+            </div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn" id="btn0">Answer 1</button>
+                <button class="btn" id="btn1">Answer 2</button>
+                <button class="btn" id="btn2">Answer 3</button>
+                <button class="btn" id="btn3">Answer 4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start!</button>
+            <button id="next-btn" class="next-btn btn hide">Następne</button>
+        </div>
+        <div id="footer-control">
+            <div id="points" class="hide">POINTS: 0</div>
+            <button id="change-category" class="hide">ZMIEŃ KATEGORIĘ</button>
+            <div id="wrong-answers" class="hide">BŁĘDÓW: 0/0</div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/question.js"></script>
+    <script src="js/controls.js"></script>
+</body> 
+</html>
